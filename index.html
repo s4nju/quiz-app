@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <img id="main-logo" src="logoThing.png" alt="logo">
+        <div onclick="handleType(event)" id="navbar">
+            <a href="#"><li id="0">Cricket</li></a>
+            <a href="#"><li id="1">Indian Politics</li></a>
+            <a href="#"><li id="2">History</li></a>
+            <a href="#"><li id="3">Geography</li></a>
+        </div>
+        <h1 id="quiz-type"></h1>
+        <div id="content">
+            <button id="prev-question" onclick="handlePrev()">Prev</button>
+            <div id="question-container">
+                <img id="question-image"></img>
+                <div id="question-text"></div>
+                <div onclick="handleAnswer(event)" id="question-options">
+                    <div>
+                        <div id="option0"></div>
+                        <div id="option1"></div>
+                    </div>
+                    <div>
+                        <div id="option2"></div>
+                        <div id="option3"></div>
+                    </div>
+                </div>
+            </div>
+            <button id="next-question" onclick="handleNext()">Next</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
